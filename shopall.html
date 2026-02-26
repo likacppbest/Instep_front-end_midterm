@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+        .shop-sidebar {
+        width: 440px;              
+        padding: 20px 10px;
+        font-family: "Helvetica", sans-serif;
+        color: black;
+        }
+
+        .sb-title {
+        font-family: Georgia, serif;
+        font-size: 26px;
+        margin: 0;
+        }
+
+        .sb-title.filter {
+        margin-top: 150px;
+        }
+
+        .sb-line {
+        height: 1px;
+        background: black;
+        margin: 14px 0 20px;
+        }
+
+        .sb-links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+        padding-left: 0;
+        
+        }
+
+        .sb-links a:hover {
+            color:grey;
+            cursor: pointer;
+            border-bottom: 1px solid grey;
+        }
+
+        .sb-head {
+        width: 100%;
+        border: none;
+        padding-bottom: 16px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+        } 
+
+        .price-range {
+        width: 100%;
+        appearance: none;
+        height: 3px;
+        background: black;
+        margin: 10px 0;
+        }
+
+        .price-range::-webkit-slider-thumb {
+        appearance: none;
+        width: 16px;
+        height: 16px;
+        background: black;
+        border-radius: 50%;
+        }
+
+        .price-values {
+        display: flex;
+        justify-content: space-between;
+        }
+
+        .shopall{
+            padding-left:60px;
+            padding-bottom: 60px;
+            margin-bottom: 40px;
+            display: flex;
+            flex-direction: row;
+            column-gap: 50px;
+            padding-top: 30px;
+            background-color: rgb(238, 238, 238);
+        }
+
+        main{
+            padding-top:20px;
+        }
+
+        main p{
+            padding-top:10px;
+            padding-right: 100px;
+        }
+
+        main .p2{
+            padding-top:60px;
+        }
+
+        .book-collection{
+            margin-top: 30px;
+            display: flex;
+            column-gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .book-collection img{
+            width:450px;
+            height: 450px;
+
+        }
+
+        .book-collection div{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .book-collection a{
+            text-decoration: none;
+            color:black;
+            padding-top:30px;
+        }
+
+        .book-collection a:hover{
+            transition-duration: 0.3s;
+            color:grey;
+        }
+
+        .book-collection img:hover{
+            transition-duration: 0.3s;
+            border: 1px solid grey;
+        }
+
+        @media screen and (max-width: 768px){
+
+            .shopall{
+                flex-direction: column;
+                padding: 20px 16px;
+                gap: 30px;
+            }
+
+            .shop-sidebar{
+                width: 100%;
+                flex: 0 0 auto;
+                padding: 10px 0;
+            }
+
+            .sb-title.filter{
+                margin-top: 60px;
+            }
+
+            .book-collection{
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            main .p2{
+                padding-top: 25px;
+            }
+            }
+        
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+
+            <div class="nav-left">
+                <a href="index.html">K.Fitzgibbons</a>
+            </div>
+
+            <div class="nav-center">
+                <a href="about.html">About</a>
+                <a href="#">Shop All</a>
+                <a href="#">Services</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+
+            <div class="nav-right">
+                <button href="#" style="border:1px solid black; ">Log In</button>
+                <button href="#" style="border:1px solid black; ">Sign Up</button>    
+            </div>
+        </nav>
+    </header>
+    <section class="shopall">
+        <aside class="shop-sidebar">
+
+            <h2 class="sb-title">Browse by</h2>
+            <div class="sb-line"></div>
+
+            <nav class="sb-links" style="background-color: transparent;">
+                <a class="active" href="#" >All Products</a>
+                <a href="#">Antique Tomes</a>
+                <a href="#">First Editions</a>
+                <a href="#">Illustrated Volumes</a>
+            </nav>
+
+            <h2 class="sb-title filter">Filter by</h2>
+            <div class="sb-line"></div>
+
+            <div class="sb-accordion open">
+                <p class="sb-head">Price</p>
+
+                <div class="sb-body">
+                <input type="range" min="150" max="400" value="150" class="price-range">
+
+                <div class="price-values">
+                    <span>$150</span>
+                    <span>$400</span>
+                </div>
+                </div>
+            </div>
+
+            </aside>
+            <main>
+                <div>
+                    <h1>All Products</h1>
+                    <p>This is your category description. It’s a great place to tell customers what this category is about, connect with your audience and draw attention to your products.</p>
+                    <p class="p2">6 products</p>
+                </div>
+
+                <div class="book-collection">
+                    <div> 
+                        <a href="book1.html">
+                            <img src="images/book-1.jpg">
+                        </a>
+                        <a href="book1.html">
+                            <p>Classic Novel First Edition</p>
+                            <p>$250.00</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="book2.html">
+                        <img src="images/book-2.jpg">
+                        </a>
+                        <a href="book2.html">
+                            <p>Classic Book The Authentics</p>
+                            <p>$75.00</p>
+                        </a>
+                        </div>
+                    <div>
+                        <a href="book3.html">
+                        <img src="images/book-3.jpg">
+                        </a>
+                        <a href="book3.html">
+                            <p>Classic Book Ron Mueck</p>
+                            <p>$105.00</p> 
+                        </a>
+
+                    </div>
+                    <div>
+                        <a href="book4.html">
+                        <img src="images/book-4.jpg">
+                        </a>
+                        <a href="book4.html">
+                            <p>Classic Book Hause</p>
+                            <p>$115.00</p>
+                        </a>
+
+                    </div>
+                    <div>
+                        <a href="book5.html">
+                        <img src="images/book-5.jpg">
+                        </a>
+                        <a href="book5.html">
+                            <p>Classic book Dune</p>
+                            <p>$80.00</p>
+                        </a>
+
+                    </div>
+                    <div>
+                        <a href="book6.html">
+                          <img src="images/book-6.jpg">
+                        </a>
+                        <a href="book6.html">
+                            <p>Ancient book GRAY</p>
+                            <p>$200.00</p>
+                        </a>
+                        </div>
+
+                </div>
+            </main>
+
+        </section>
+
+    
+    <footer style="margin-bottom: 50px;">
+        <div class="footer-div">
+
+            
+            <div class="left-side">
+                <h1 style="margin-bottom:40px;">K. Fitzgibbons</h1>
+                
+                <p>123-456-7890<br>
+                info@mysite.com</p><br>
+
+                <p>
+                    500 Terry Francine St. San<br>
+                    Francisco, CA 94158
+                </p> <br>
+
+                <div class="social-icons">
+                    <i class="fa fa-instagram" style="font-size:40px; margin-right:20px;"></i>
+                    <i class="fa fa-facebook" style="font-size:40px; margin-right:20px;"></i>
+                    <i class="fa fa-youtube" style="font-size:40px;"></i>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <p style="margin-top:70px;"><a href="#">Privacy Policy</a></p>
+                <p><a href="#">Accessibility Statement</a></p>
+                <p><a href="#">Shipping Policy</a></p>
+                <p><a href="#">Terms & Conditions</a></p>
+                <p style="margin-bottom:50px;"><a href="#">Refund Policy</a></p>
+                
+
+                <p>
+                    © 2035 by K. Fitzgibbons. Powered and secured by
+                    <a href="#">Wix</a>
+                </p>
+            </div>
+
+        </div>
+</footer>
+</body>
+</html>

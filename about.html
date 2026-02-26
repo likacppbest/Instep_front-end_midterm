@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .about-box{
+            display: flex;
+            flex-direction: column;
+            column-gap: 50px;
+            background-color: rgb(165, 165, 165);
+            margin-bottom:100px;
+        }
+        .about-text{
+            padding-top: 90px;
+            padding-left:80px;
+            padding-right:80px;
+            display: flex;
+            font-size: 20px;
+            justify-content: space-between;
+            margin-bottom:100px;
+            background-color: transparent;
+        }
+        .about-imgs{
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            column-gap:80px;
+            padding-left:80px;
+            padding-right:80px;
+            margin-bottom:100px;
+        }
+        .about-imgs img{
+            width:350px;
+            height:450px;
+            
+        }
+        .about-imgs div{
+            display: flex;
+            flex-direction: column;
+            row-gap:30px;
+        }
+        @media screen and (max-width: 768px){
+            .about-imgs{
+                flex-direction: column;
+            }
+            .about-imgs div{
+                margin-bottom: 40px;
+                align-items: center;
+            }
+            .about-text{
+                flex-direction: column;
+                row-gap:40px;
+                align-items: center;
+                
+            }
+
+            
+        }
+    
+    </style>
+    
+</head>
+<body>
+    <header>
+        <nav>
+
+            <div class="nav-left">
+                <a href="index.html">K.Fitzgibbons</a>
+            </div>
+
+            <div class="nav-center">
+                <a href="about.html">About</a>
+                <a href="shopall.html">Shop All</a>
+                <a href="#">Services</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+
+            <div class="nav-right">
+                <button href="#" style="border:1px solid black; ">Log In</button>
+                <button href="#" style="border:1px solid black; ">Sign Up</button>    
+            </div>
+            
+        </nav>
+    </header>
+
+    <section>
+        <div class="section-2">
+            <div class="section2-box1">
+                <p class="header">ABOUT<p>
+                    <br>
+
+                <i class="fa fa-star"></i>
+                <br> <br>
+                <p>Discover the world of rare literary treasures at K. Fitzgibbons, where each book is a piece of history meticulously preserved to captivate collectors and enthusiasts alike. Our store offers a curated selection of first editions, antique tomes, and beautifully illustrated volumes across various genres and historical contexts. Immerse yourself in the elegance of our interiors, adorned with vintage decor and elegant displays, creating the perfect ambiance for literary exploration.</p>
+                <a href="index.html#contact"><button>Reach Out</button></a>
+            </div>
+            <div class="section2-box2"><img src="images/book-3.jpg">
+        </div>
+    </section>
+
+    <section class="about-box">
+
+        <div class="about-text"> 
+           <div> <h1> OUR MISSION</h1></div>
+           <div>Preserving Literary Legacies</div>
+        </div>
+        
+        <div class="about-imgs">
+            <div>
+                <img src="images/background-3.jpg">
+                <h2>Authenticity</h2>
+                <p>Perfect Execution</p>
+            </div>
+            <div>
+                <img src="images/background-4.jpg">
+                <h2>Community</h2>
+                <p>A Real Success</p> </div>
+            <div>
+                <img src="images/background-5.jpg">
+                <h2>Restoration</h2>
+                <p>Exceptional Achievement</p> </div>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <footer style="margin-bottom: 50px;">
+        <div class="footer-div">
+
+            
+            <div class="left-side">
+                <h1 style="margin-bottom:40px;">K. Fitzgibbons</h1>
+                
+                <p>123-456-7890<br>
+                info@mysite.com</p><br>
+
+                <p>
+                    500 Terry Francine St. San<br>
+                    Francisco, CA 94158
+                </p> <br>
+
+                <div class="social-icons">
+                    <i class="fa fa-instagram" style="font-size:40px; margin-right:20px;"></i>
+                    <i class="fa fa-facebook" style="font-size:40px; margin-right:20px;"></i>
+                    <i class="fa fa-youtube" style="font-size:40px;"></i>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <p style="margin-top:70px;"><a href="#">Privacy Policy</a></p>
+                <p><a href="#">Accessibility Statement</a></p>
+                <p><a href="#">Shipping Policy</a></p>
+                <p><a href="#">Terms & Conditions</a></p>
+                <p style="margin-bottom:50px;"><a href="#">Refund Policy</a></p>
+                
+
+                <p>
+                    © 2035 by K. Fitzgibbons. Powered and secured by
+                    <a href="#">Wix</a>
+                </p>
+            </div>
+
+        </div>
+</footer>
+
+</body>
+</html>
